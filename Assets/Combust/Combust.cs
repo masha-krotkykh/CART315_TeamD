@@ -12,11 +12,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Combust : Break
+public class Combust : MonoBehaviour
 {
 
     public float temperature;
     public ParticleSystem particles; // Reference to particle system
+
+    // Variable to refer to the destroyed version of the object
+    public GameObject destroyedVersion;
 
     // burn function describes basic behaviour of a burning object
     public void burn()
@@ -29,7 +32,7 @@ public class Combust : Break
 
         Destroy(particle, 6);
 
-        Invoke("explode", 5);
+        Invoke("Destroy", 5);
 
         temperature += 10;
 
@@ -61,6 +64,16 @@ public class Combust : Break
                 burn();
             }
 
+    }
+
+    public void Destroy()
+    {
+        // Spawn the broken version with "instantiate", give it the same position and rotation as the original.
+        Instantiate(destroyedVersion, transform.position, transform.rotation);
+
+        // Destroy the unbroken version, lowercase gameObject refers to the current object.
+        Destroy(gameObject);
+       
     }
 
     // FOR TESTING PURPOSES
