@@ -91,6 +91,7 @@
     <Compile Include="Assets\GroupD\Scripts\Molotov.cs" />
     <Compile Include="Assets\GroupD\Scripts\MolotovLauncher.cs" />
     <Compile Include="Assets\GroupD\Scripts\NavMeshController.cs" />
+    <Compile Include="Assets\GroupD\Scripts\PickUp.cs" />
     <Compile Include="Assets\GroupD\Scripts\RigidBodyController.cs" />
     <Compile Include="Assets\GroupD\Scripts\SmolExpEff.cs" />
     <Compile Include="Assets\keyopen\KeyOpen.cs" />

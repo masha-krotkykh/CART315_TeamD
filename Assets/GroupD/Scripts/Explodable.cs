@@ -16,11 +16,14 @@ public class Explodable : MonoBehaviour
     // Variable to refer to the destroyed version of the object
     public GameObject destroyedVersion;
 
-    // Function to run when mouse is clicked.
+
     public void Destroy()
     {
-        // Spawn the broken version with "instantiate", give it the same position and rotation as the original.
-        Instantiate(destroyedVersion, transform.position, transform.rotation);
+        // Spawn the broken version if it exists with "instantiate", give it the same position and rotation as the original.
+        if (destroyedVersion != null) {
+            Instantiate(destroyedVersion, transform.position, transform.rotation);
+        }
+
 
         // Destroy the unbroken version, lowercase gameObject refers to the current object.
         Destroy(gameObject);

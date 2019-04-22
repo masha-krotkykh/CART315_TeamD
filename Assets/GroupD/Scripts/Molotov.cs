@@ -8,8 +8,8 @@ using UnityEngine;
 public class Molotov : MonoBehaviour
 {
     public float delay = 2f; // Timer before the explosion
-    public float blastRadius = 5f; // Area of damage
-    public float force = 700; // Explosion force
+    public float blastRadius = 3f; // Area of damage
+    public float force = 500; // Explosion force
 
     public GameObject explosionEffect;
 

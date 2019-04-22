@@ -79,19 +79,17 @@ public class RigidBodyController : MonoBehaviour
         {
             isGrounded = true;
         }
-
-       
     }
 
-    void OnMouseDown()
+    void OnTriggerEnter(Collider col)
     {
-        if (gameObject.tag == ("pickupable"))
+        if (col.gameObject.tag == "pickupable")
         {
             molotovs += 1;
-            Destroy(gameObject);
+            Destroy(col.gameObject);
+            Debug.Log(molotovs);
         }
-        Debug.Log("clicked");
     }
-
-
 }
+
+

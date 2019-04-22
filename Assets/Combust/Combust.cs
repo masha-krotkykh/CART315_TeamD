@@ -34,7 +34,7 @@ public class Combust : MonoBehaviour
 
         Invoke("Destroy", 5);
 
-        temperature += 10;
+        //temperature += 10;
 
         //When the temperature gets above 5, the object receives tag "Burning"
         if(temperature > 5) 
@@ -45,35 +45,37 @@ public class Combust : MonoBehaviour
  
     }
 
-    // Combustible object gets on fire on collision with a burning object
-    public void OnCollisionEnter(Collision other)
-    {
-        if(other.gameObject.CompareTag("Burning")) 
-        {
+    //// Combustible object gets on fire on collision with a burning object
+    //public void OnCollisionEnter(Collision other)
+    //{
+    //    if(other.gameObject.CompareTag("Burning")) 
+    //    {
 
-            this.temperature += 10;
-            burn();
-        }
-    }
+    //        this.temperature += 10;
+    //        burn();
+    //    }
+    //}
 
     // Combustible object gets on fire staying in contact with a burning object
-    public void OnTriggerStay(Collider other)
-    {
-            if (Vector3.Distance(other.transform.position, this.transform.position) < 50 && (other.gameObject.layer!= LayerMask.NameToLayer("Water")))
-            {
-                burn();
-            }
+    //public void OnTriggerStay(Collider other)
+    //{
+    //        if (Vector3.Distance(other.transform.position, this.transform.position) < 50 && (other.gameObject.layer!= LayerMask.NameToLayer("Water")))
+    //        {
+    //            burn();
+    //        }
 
-    }
+    //}
 
     public void Destroy()
     {
         // Spawn the broken version with "instantiate", give it the same position and rotation as the original.
-        Instantiate(destroyedVersion, transform.position, transform.rotation);
+        GameObject debris = Instantiate(destroyedVersion.gameObject, transform.position, transform.rotation);
 
         // Destroy the unbroken version, lowercase gameObject refers to the current object.
         Destroy(gameObject);
-       
+
+        Destroy(debris, 6);
+
     }
 
     // FOR TESTING PURPOSES
