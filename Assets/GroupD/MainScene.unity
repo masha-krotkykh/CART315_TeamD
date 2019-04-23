@@ -998,7 +998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  jumpSpeed: 15
+  jumpSpeed: 5
   isGrounded: 0
   molotovs: 10
 --- !u!54 &1228310089
