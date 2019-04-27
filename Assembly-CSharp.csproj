@@ -89,6 +89,7 @@
     <Compile Include="Assets\GroupD\Scripts\EnemyThrow.cs" />
     <Compile Include="Assets\GroupD\Scripts\Explodable.cs" />
     <Compile Include="Assets\GroupD\Scripts\floatability.cs" />
+    <Compile Include="Assets\GroupD\Scripts\Floating.cs" />
     <Compile Include="Assets\GroupD\Scripts\Molotov.cs" />
     <Compile Include="Assets\GroupD\Scripts\MolotovLauncher.cs" />
     <Compile Include="Assets\GroupD\Scripts\NavMeshController.cs" />
