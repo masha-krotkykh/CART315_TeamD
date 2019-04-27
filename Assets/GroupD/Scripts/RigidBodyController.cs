@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RigidBodyController : MonoBehaviour
 {
@@ -51,8 +52,11 @@ public class RigidBodyController : MonoBehaviour
         {
             Jump();
         }
-        if (health <= 0) {
+
+        if (health <= 0) 
+        {
             alive = false;
+            Reload();
         }
     }
 
@@ -97,7 +101,6 @@ public class RigidBodyController : MonoBehaviour
         {
             health -= 10;
             Debug.Log(health);
-            Debug.Log(alive);
         }
     }
 
@@ -107,8 +110,13 @@ public class RigidBodyController : MonoBehaviour
         {
             molotovs += 1;
             Destroy(col.gameObject);
-            Debug.Log(molotovs);
         }
+    }
+    
+    public void Reload() 
+    {
+        Debug.Log("reloaded");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
 
