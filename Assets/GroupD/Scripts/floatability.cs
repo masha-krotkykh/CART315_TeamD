@@ -5,7 +5,7 @@ using UnityEngine;
 public class floatability : MonoBehaviour
 {
 
-    public Vector3 upLift = new Vector3(0, 14, 0);
+    public Vector3 upLift = new Vector3(10, 0, 0);
     public Rigidbody rb;
     public float viscosity = 1f;
     public float drag = 1.5f;

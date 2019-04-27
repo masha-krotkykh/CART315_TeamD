@@ -13,12 +13,12 @@ public class Floating : MonoBehaviour
     {
         if (transform.position.y > water.transform.position.y)
         {
-            GetComponent<Rigidbody>().AddForce(-transform.forward * force * 4);
+            GetComponent<Rigidbody>().AddForce(-transform.forward * force * 10);
         }
 
         if (transform.position.y < water.transform.position.y)
         {
-            GetComponent<Rigidbody>().AddForce(transform.forward * force * 2);
+            GetComponent<Rigidbody>().AddForce(transform.forward * force * 5);
         }
     }
 
