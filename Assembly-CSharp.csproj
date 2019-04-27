@@ -85,6 +85,7 @@
     <Compile Include="Assets\GroupD\Scripts\Break.cs" />
     <Compile Include="Assets\GroupD\Scripts\buoyancy.cs" />
     <Compile Include="Assets\GroupD\Scripts\Destructible.cs" />
+    <Compile Include="Assets\GroupD\Scripts\EnemyController.cs" />
     <Compile Include="Assets\GroupD\Scripts\EnemyThrow.cs" />
     <Compile Include="Assets\GroupD\Scripts\Explodable.cs" />
     <Compile Include="Assets\GroupD\Scripts\floatability.cs" />
