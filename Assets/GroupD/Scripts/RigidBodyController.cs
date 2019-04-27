@@ -17,6 +17,9 @@ public class RigidBodyController : MonoBehaviour
 
     public int molotovs;
 
+    public float health = 100f;
+    public bool alive = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,9 @@ public class RigidBodyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
+        }
+        if (health <= 0) {
+            alive = false;
         }
     }
 
@@ -85,6 +91,13 @@ public class RigidBodyController : MonoBehaviour
         if (col.gameObject.tag == ("Ground") && isGrounded == false)
         {
             isGrounded = true;
+        }
+
+        if (col.gameObject.tag == ("Explodable"))
+        {
+            health -= 10;
+            Debug.Log(health);
+            Debug.Log(alive);
         }
     }
 
