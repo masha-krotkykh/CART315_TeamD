@@ -60,14 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Become\Become.cs" />
-    <Compile Include="Assets\Behavior script\BehaviourScript.cs" />
-    <Compile Include="Assets\Combust\Combust.cs" />
-    <Compile Include="Assets\Combust\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Eat\Eat.cs" />
-    <Compile Include="Assets\Eat\Eatable.cs" />
-    <Compile Include="Assets\Eat\Health.cs" />
-    <Compile Include="Assets\Eat\Pickupper2.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\DecalDestroyer.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ExtinguishableFire.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\GunAim.cs" />
@@ -76,17 +68,12 @@
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleExamples.cs" />
     <Compile Include="Assets\EffectExamples\Shared\Scripts\ParticleMenu.cs" />
     <Compile Include="Assets\EffectExamples\TutorialInfo\Scripts\Readme.cs" />
-    <Compile Include="Assets\EnemyBehaviour\EnemyBehaviour.cs" />
-    <Compile Include="Assets\EnemyBehaviour\EnemyChase.cs" />
-    <Compile Include="Assets\EnemyBehaviour\EnemyPatrol.cs" />
-    <Compile Include="Assets\EnemyBehaviour\EnemyRepel.cs" />
-    <Compile Include="Assets\flockingscript\BoidController.cs" />
-    <Compile Include="Assets\flockingscript\BoidWatcher.cs" />
+    <Compile Include="Assets\GroupD\Scripts\Become.cs" />
     <Compile Include="Assets\GroupD\Scripts\Break.cs" />
     <Compile Include="Assets\GroupD\Scripts\buoyancy.cs" />
+    <Compile Include="Assets\GroupD\Scripts\Combust.cs" />
     <Compile Include="Assets\GroupD\Scripts\Destructible.cs" />
     <Compile Include="Assets\GroupD\Scripts\EnemyController.cs" />
-    <Compile Include="Assets\GroupD\Scripts\EnemyThrow.cs" />
     <Compile Include="Assets\GroupD\Scripts\Explodable.cs" />
     <Compile Include="Assets\GroupD\Scripts\floatability.cs" />
     <Compile Include="Assets\GroupD\Scripts\Floating.cs" />
@@ -96,8 +83,7 @@
     <Compile Include="Assets\GroupD\Scripts\PickUp.cs" />
     <Compile Include="Assets\GroupD\Scripts\RigidBodyController.cs" />
     <Compile Include="Assets\GroupD\Scripts\SmolExpEff.cs" />
-    <Compile Include="Assets\keyopen\KeyOpen.cs" />
-    <Compile Include="Assets\keyopen\KeyOpenController.cs" />
+    <Compile Include="Assets\GroupD\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Misc\HueCube.cs" />
@@ -106,7 +92,6 @@
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Vertex Colors\HighlightNearestFace.cs" />
     <Compile Include="Assets\Range\DisableIfFarAwayV2.cs" />
     <Compile Include="Assets\Range\ItemActivatorV2.cs" />
-    <Compile Include="Assets\Resources\ParticleSystem\DestroyByTimer.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -115,20 +100,6 @@
     <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
-    <Compile Include="Assets\Scripts\BreakInTriangles.cs" />
-    <Compile Include="Assets\Scripts\FirstPersonController.cs" />
-    <Compile Include="Assets\Scripts\Pickupper.cs" />
-    <Compile Include="Assets\Scripts\Projectile.cs" />
-    <Compile Include="Assets\Scripts\Protect.cs" />
-    <Compile Include="Assets\Scripts\Spawner.cs" />
-    <Compile Include="Assets\Scripts\ThirdPersonUserControl.cs" />
-    <Compile Include="Assets\Scripts\Throw.cs" />
-    <Compile Include="Assets\Scripts\ThrowTest.cs" />
-    <Compile Include="Assets\Scripts\UseController.cs" />
-    <Compile Include="Assets\Spawner\ClickDestroyer.cs" />
-    <Compile Include="Assets\Use\Usable.cs" />
-    <Compile Include="Assets\Use\UseTarget.cs" />
-    <None Include="Assets\Behavior script\PseudoCode.txt" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_SelectionPicker.shader" />
